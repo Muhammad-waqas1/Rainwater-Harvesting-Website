@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techastegy | Rainwater Harvesting</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Core -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Theme -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+    <!-- NAVBAR (Glassmorphism) -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold text-white" href="#">Techastegy</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="techniques.html">Techniques</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#categories">Applications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#facts-methods">Facts & Methods</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educate">Use of Water</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="developments.html">Developments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-section d-flex align-items-center" style="background-image: url('images/hero-1.jpg')">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold mb-3">Harvest Every Drop</h1>
+            <p class="lead mb-4">Innovative strategies, expert insights, and the latest breakthroughs in rainwater
+                harvesting.</p>
+            <a href="#intro" class="btn btn-lg btn-primary">Explore Research →</a>
+        </div>
+    </header>
+
+    <!-- INTRODUCTION ARTICLE -->
+    <section id="intro" class="py-6">
+        <div class="container">
+            <h2 class="section-title">Introduction & Global Context</h2>
+            <p class="text-muted fst-italic">“In a world where 70% of freshwater is consumed by agriculture, rainwater
+                harvesting emerges as a game‑changer.”</p>
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-8">
+                    <p>Rainfall variability poses critical challenges to food security, especially in arid and semi‑arid
+                        regions. In Pakistan alone, over 12 Mha of dryland agriculture depends solely on monsoon rains,
+                        yet losses due to runoff and evaporation can exceed 40%. Effective on‑site capture of rainwater
+                        can boost yield, recharge aquifers, and mitigate floods.</p>
+                    <p>Studies indicate that rooftop catchment systems paired with underground cisterns can store up to
+                        50 m³ per household per rainy season, reducing urban stormwater load by 30% and cutting
+                        municipal supply needs by 20%.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="images/intro-diagram.png" alt="Rainwater Cycle Diagram"
+                        class="img-fluid rounded shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNIQUES (Article‑Style Subsections) -->
+    <section id="techniques" class="py-6 bg-light">
+        <div class="container">
+            <h2 class="section-title">Core Harvesting Techniques</h2>
+
+            <!-- Technique 1 -->
+            <article class="technique-item mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <img src="images/technique-roof-advanced.jpg" alt="Advanced Roof Catchment"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3>1. Rooftop Catchment & First‑Flush Systems</h3>
+                        <p>By channeling roof runoff through a first‑flush diverter, impurities are excluded before
+                            water enters storage. Modern designs employ self‑cleaning gutters and fine mesh filters to
+                            achieve >95% collection efficiency.</p>
+                        <ul>
+                            <li><strong>Materials:</strong> UV‑stabilized PVC pipes, stainless‑steel mesh.</li>
+                            <li><strong>Storage:</strong> Aboveground tanks (polyethylene or ferrocement), underground
+                                cisterns.</li>
+                            <li><strong>Applications:</strong> Domestic drinking water (with treatment), irrigation,
+                                toilet flushing.</li>
+                        </ul>
+                        <a href="techniques.html#roof" class="btn btn-outline-primary btn-sm mt-2">Deep Dive →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Technique 2 -->
+            <article class="technique-item mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/technique-surface-advance.jpg" alt="Surface Runoff Capture"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>2. Surface Runoff Harvesting & Recharge Pits</h3>
+                        <p>Intercept paved or natural surfaces via gently sloped channels leading into infiltration
+                            trenches or recharge pits. Design parameters:</p>
+                        <ol>
+                            <li><strong>Slope:</strong> 1–3% gradient for optimal flow.</li>
+                            <li><strong>Pit Depth:</strong> 1.5–2 m with filter media layers (gravel, sand, charcoal).
+                            </li>
+                            <li><strong>Overflow:</strong> Spillways to prevent flooding of adjacent areas.</li>
+                        </ol>
+                        <a href="techniques.html#surface" class="btn btn-outline-primary btn-sm mt-2">Learn More →</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Technique 3 -->
+            <article class="technique-item mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <img src="images/technique-bioswale.jpg" alt="Bioswale System" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <h3>3. Bioswales & Permeable Pavements</h3>
+                        <p>Bioswales—landscaped shallow channels—use vegetation and engineered soils to slow, filter,
+                            and infiltrate stormwater. Coupled with permeable pavers, they reduce runoff by up to 85%.
+                        </p>
+                        <ul>
+                            <li><strong>Vegetation:</strong> Native grasses, shrubs tolerant to both drought and
+                                inundation.</li>
+                            <li><strong>Substrate:</strong> 60% sand, 20% compost, 20% topsoil.</li>
+                            <li><strong>Load‑Bearing:</strong> Porous concrete pavers rated to 25 MPa for light traffic.
+                            </li>
+                        </ul>
+                        <a href="techniques.html#bioswale" class="btn btn-outline-primary btn-sm mt-2">Discover More
+                            →</a>
+                    </div>
+                </div>
+            </article>
+            <!-- Add more techniques as needed -->
+        </div>
+    </section>
+
+    <!-- CATEGORIES: Residential & Commercial -->
+    <section id="categories" class="py-6">
+        <div class="container">
+            <h2 class="section-title">Applications by Area</h2>
+            <div class="row g-4">
+                <!-- Residential -->
+                <div class="col-lg-6">
+                    <div class="app-card p-4 h-100">
+                        <h3>Residential Area</h3>
+                        <p>Customized, small‑scale systems for rooftops, patios, and garden paths.</p>
+                        <ul>
+                            <li>Compact first‑flush diverters</li>
+                            <li>Modular tank kits (1–10 m³)</li>
+                            <li>Greywater integration</li>
+                        </ul>
+                        <a href="residential.html" class="btn btn-primary btn-sm mt-2">View Residential Solutions →</a>
+                    </div>
+                </div>
+                <!-- Commercial -->
+                <div class="col-lg-6">
+                    <div class="app-card p-4 h-100">
+                        <h3>Commercial Area</h3>
+                        <p>High‑capacity harvesting for campuses, shopping centers, and industrial estates.</p>
+                        <ul>
+                            <li>Subsurface detention & recharge</li>
+                            <li>Smart monitoring & filtration</li>
+                            <li>Hybrid stormwater‑harvest systems</li>
+                        </ul>
+                        <a href="commercial.html" class="btn btn-primary btn-sm mt-2">Explore Commercial Kits →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACTS & METHODS -->
+    <section id="facts-methods" class="py-6 bg-light">
+        <div class="container">
+            <h2 class="section-title">Key Facts & Proven Methods</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="fact-item p-4 mb-4">
+                        <h4>Fact #1</h4>
+                        <p>Every 1 mm of rain on 1 m² yields 1 L of water—potentially billions of liters lost annually
+                            in urban catchments.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="fact-item p-4 mb-4">
+                        <h4>Method: Check Dams</h4>
+                        <p>Small barriers across channels to slow flow, enhance infiltration, and trap sediment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="fact-item p-4 mb-4">
+                        <h4>Method: Rain Gardens</h4>
+                        <p>Vegetated depressions that absorb runoff, reduce peak discharge, and improve water quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATE: Effective Use -->
+    <section id="educate" class="py-6">
+        <div class="container">
+            <h2 class="section-title">Maximizing Harvested Water</h2>
+            <p>Proper utilization turns collection into real impact. Below are best practices:</p>
+            <ul class="list-check mb-4">
+                <li>Irrigation scheduling based on soil moisture sensors.</li>
+                <li>Dual‑plumb systems for non‑potable indoor uses.</li>
+                <li>Groundwater recharge via injection wells.</li>
+                <li>Emergency backup supply during droughts.</li>
+            </ul>
+            <img src="images/usage-diagram.png" alt="Usage Diagram" class="img-fluid rounded shadow-sm">
+        </div>
+    </section>
+
+    <!-- DEVELOPMENTS -->
+    <section id="developments" class="py-6 bg-light">
+        <div class="container">
+            <h2 class="section-title">Latest Developments</h2>
+            <ul class="development-list">
+                <li><strong>Mar 2025:</strong> IoT‑enabled smart cisterns with real‑time quality monitoring.</li>
+                <li><strong>Feb 2025:</strong> Graphene‑coated filters achieving sub‑micron purification.</li>
+                <li><strong>Jan 2025:</strong> Revised national policy mandating rainwater harvesting in new
+                    constructions.</li>
+            </ul>
+            <a href="developments.html" class="btn btn-outline-secondary btn-sm mt-3">Read Full Updates →</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5 text-dark">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <!-- Column 1: Copyright -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column justify-content-center">
+                    <h5 class="fw-bold mb-2">© 2025 Techastegy</h5>
+                    <p class="mb-0 small">All rights reserved.</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled text-center text-md-start">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="techniques.html">Techniques</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="commercial.html">Commercial</a></li>
+                        <li><a href="developments.html">Developments</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Social Links -->
+                <div class="col-12 col-md-4 d-flex flex-column align-items-md-end align-items-center">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin fa-xl" style="color: #fcdc97;"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook fa-xl" style="color: #fcdc97;"></i></a>
+                        <a href="#"><i class="fa-brands fa-github fa-xl" style="color: #fcdc97;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Bootstrap Bundle & Icons -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

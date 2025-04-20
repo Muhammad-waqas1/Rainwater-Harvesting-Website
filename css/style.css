@@ -1,0 +1,362 @@
+/* ================================
+   Design Tokens & Resets
+   ================================ */
+:root {
+    /* Colors */
+    --clr-bg: #f5f7fa;
+    --clr-foreground: #ffffff;
+    --clr-primary: #3b82f6;
+    --clr-secondary: #2563eb;
+    --clr-accent: #6366f1;
+    --clr-text: #1f2937;
+    --clr-muted: #6b7280;
+
+    /* Typography */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.125rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+
+    /* Effects */
+    --radius: 0.75rem;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* ================================
+     Global Utility Classes
+     ================================ */
+.section-title {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.25rem;
+    background: var(--clr-primary);
+    border-radius: var(--radius);
+    margin-top: var(--space-sm);
+}
+
+.btn {
+    border-radius: var(--radius);
+    font-weight: 500;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-light);
+}
+
+/* ================================
+     Glassmorphism Navbar
+     ================================ */
+.glass-nav {
+    background: rgb(0 78 255 / 33%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-medium);
+    padding: var(--space-sm) 0;
+}
+
+.glass-nav .navbar-brand {
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--clr-foreground);
+    font-weight: 500;
+    margin-left: var(--space-md);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--clr-secondary);
+}
+
+/* ================================
+     Hero Section
+     ================================ */
+.hero-section {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(0 78 255 / 33%), rgb(0 78 255 / 43%));
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: var(--fs-3xl);
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-md);
+}
+
+/* ================================
+     Section Styles & Separators
+     ================================ */
+section {
+    padding: var(--space-lg) 0;
+    position: relative;
+}
+
+section:nth-of-type(even) {
+    background: var(--clr-foreground);
+}
+
+section:nth-of-type(odd) {
+    background: var(--clr-bg);
+}
+
+/* Decorative bottom wave */
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    background: inherit;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    z-index: 1;
+}
+
+/* ================================
+     Articles & Technique Items
+     ================================ */
+.technique-item {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-light);
+    padding: var(--space-md);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.technique-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
+}
+
+.technique-item h3 {
+    margin-bottom: var(--space-sm);
+    font-size: var(--fs-xl);
+    color: var(--clr-secondary);
+}
+
+.technique-item p,
+.technique-item ul,
+.technique-item ol {
+    margin-bottom: var(--space-sm);
+}
+
+/* ================================
+     Application Cards
+     ================================ */
+.app-card {
+    background: var(--clr-foreground);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s;
+}
+
+.app-card:hover {
+    transform: translateY(-3px);
+}
+
+.app-card h3 {
+    color: var(--clr-primary);
+    margin-bottom: var(--space-sm);
+}
+
+/* ================================
+     Facts & Methods
+     ================================ */
+.fact-item {
+    background: var(--clr-foreground);
+    border-left: 4px solid var(--clr-primary);
+    padding: var(--space-md);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-light);
+    transition: background 0.3s;
+}
+
+.fact-item:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+.fact-item h4 {
+    margin-bottom: var(--space-sm);
+    color: var(--clr-secondary);
+}
+
+/* ================================
+     Checklist & Lists
+     ================================ */
+.list-check {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-check li {
+    position: relative;
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.list-check li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--clr-primary);
+}
+
+/* ================================
+     Developments Timeline
+     ================================ */
+.development-list {
+    list-style: none;
+    position: relative;
+    padding-left: var(--space-md);
+}
+
+.development-list::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    bottom: 0;
+    width: 2px;
+    background: var(--clr-accent);
+}
+
+.development-list li {
+    position: relative;
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-md);
+}
+
+.development-list li::before {
+    content: '';
+    position: absolute;
+    left: -0.45rem;
+    top: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: var(--clr-primary);
+    border-radius: 50%;
+}
+
+/* ================================
+     Footer
+     ================================ */
+footer {
+    background-color: #95b5fc;
+    color: var(--clr-foreground);
+}
+
+footer h5 {
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-sm);
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f5f7fa;
+}
+
+@media (max-width: 767.98px) {
+    footer .row>div {
+        text-align: center !important;
+        align-items: center !important;
+    }
+}
+
+
+/* ================================
+     Smooth Reveal Animations
+     ================================ */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: var(--delay, 0s);
+}
