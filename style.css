@@ -124,7 +124,9 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(0 78 255 / 33%), rgb(0 78 255 / 43%));
+    /* background: linear-gradient(180deg, rgb(0 78 255 / 33%), rgb(0 78 255 / 43%));*/
+    background-image: url(images/background-rainy.jpg);
+    height: 100vh;
 }
 
 .hero-section .container {
