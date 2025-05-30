@@ -124,12 +124,18 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgb(0 78 255 / 33%), rgb(0 78 255 / 43%));
+    /* background: linear-gradient(180deg, rgb(0 78 255 / 33%), rgb(0 78 255 / 43%)); */
+    
 }
 
 .hero-section .container {
     position: relative;
     z-index: 1;
+    background: rgba(33, 41, 44, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 50px;
 }
 
 .hero-section h1 {
